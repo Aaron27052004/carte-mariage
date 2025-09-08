@@ -108,33 +108,27 @@ h1, h2 {
 .timer {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  font-size: 1.5em;
+  gap: 10px; /* moins d'espace entre les blocs */
+  font-size: 1em; /* réduit la taille globale */
   margin-top: 20px;
-
 }
+
 .timer div {
-    background: transparent;
-    padding: 15px 20px;
+    width: 60px;  /* réduit la largeur du cercle */
+    height: 60px; /* réduit la hauteur */
+    padding: 10px; /* moins de padding à l'intérieur */
     border-radius: 50%;
     border: 2px solid white;
     color: white;
     text-align: center;
-    width: 80px;
-    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
 .timer small {
-  display: block;
-  font-size: 0.6em;
-  color: white;
-    border: white 2px;
-
+  font-size: 0.5em; /* réduit le texte des labels */
 }
 
 /* Buttons */
