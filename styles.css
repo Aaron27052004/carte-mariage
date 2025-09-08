@@ -97,26 +97,28 @@ h1, h2 {
 /* Countdown */
 #countdown {
     background: url('images/Photo_fiancaille.png') no-repeat center center;
-    background-size: cover;
+    background-size: cover; /* adapte automatiquement l'image */
     display: flex;
-    flex-direction: column; /* Arrange elements vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensure it takes full viewport height */
+    height: 100vh; /* plein écran */
+    padding: 0 5vw; /* petit padding horizontal sur mobile */
 }
 
 .timer {
-  display: flex;
-  justify-content: center;
-  gap: 10px; /* moins d'espace entre les blocs */
-  font-size: 1em; /* réduit la taille globale */
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* passe à la ligne si trop petit */
+    gap: 2vw; /* espace relatif à l'écran */
+    font-size: 3vw; /* taille relative pour s'adapter à l'écran */
+    margin-top: 2vh;
 }
 
 .timer div {
-    width: 70px;  /* réduit la largeur du cercle */
-    height: 70px; /* réduit la hauteur */
-    padding: 15px; /* moins de padding à l'intérieur */
+    width: 15vw; /* largeur relative */
+    height: 15vw; /* hauteur relative */
+    padding: 1vw;
     border-radius: 50%;
     border: 2px solid white;
     color: white;
@@ -128,27 +130,43 @@ h1, h2 {
 }
 
 .timer small {
-  font-size: 1em; /* réduit le texte des labels */
+    font-size: 0.5em;
 }
 
-/* Buttons */
-.buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+/* Media query pour petits écrans */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .timer {
+        font-size: 4vw;
+        gap: 3vw;
+    }
+
+    .timer div {
+        width: 20vw;
+        height: 20vw;
+        padding: 2vw;
+    }
+
+    h1, h2 {
+        font-size: 6vw; /* texte plus petit sur mobile */
+    }
+
+    button {
+        font-size: 3.5vw;
+        padding: 2vw 4vw;
+    }
 }
 
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
-  background: #c0392b;
-  color: white;
-  transition: 0.3s;
-}
 
 button:hover {
   background: #a93226;
