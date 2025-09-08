@@ -29,6 +29,7 @@ header {
   padding: 8px 20px; /* réduit l'épaisseur */
   z-index: 1000;
   height: 70px;
+  font-family: 'Pinyon Script', cursive;
 }
 
 header .logo {
@@ -79,15 +80,14 @@ section {
   min-height: 100vh;
   padding: 100px 20px 50px; /* espace à cause du header */
   text-align: center;
-  font-family: 'Dancing Script', cursive;
-  
+font-family: 'Pinyon Script', cursive;  
 }
 
 section:nth-child(even) {
   background: #f8f8f8;
 }
 
-h1, h2 {
+h1{
   margin-bottom: 20px;
   color: white;
    font-size: 2.5em; /* Augmente la taille de l'écriture */
@@ -139,6 +139,20 @@ h1, h2 {
 button:hover {
   background: #a93226;
 }
+
+/*Mairie*/
+#mairie{
+    background: url('images/Fond_carte.png') no-repeat center center;
+    color: #00004d; /* même couleur que par défaut */
+
+
+
+}
+
+#mairie h2{
+    font-size: 50px;
+}
+
 
 /* Footer */
 footer {
