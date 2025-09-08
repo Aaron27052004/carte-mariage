@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
 /* Reset */
 * {
   margin: 0;
@@ -77,6 +79,8 @@ section {
   min-height: 100vh;
   padding: 100px 20px 50px; /* espace à cause du header */
   text-align: center;
+  font-family: 'Dancing Script', cursive;
+  
 }
 
 section:nth-child(even) {
@@ -85,13 +89,20 @@ section:nth-child(even) {
 
 h1, h2 {
   margin-bottom: 20px;
-  color: #c0392b;
+  color: white;
+   font-size: 2.5em; /* Augmente la taille de l'écriture */
+   margin-bottom: 10px;
 }
 
 /* Countdown */
-#countdown{
+#countdown {
     background: url('images/Photo_fiancaille.png') no-repeat center center;
     background-size: cover;
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure it takes full viewport height */
 }
 
 .timer {
@@ -102,14 +113,21 @@ h1, h2 {
   margin-top: 20px;
 
 }
-
 .timer div {
     background: transparent;
     padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border: 2px solid white;
     color: white;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .timer small {
   display: block;
