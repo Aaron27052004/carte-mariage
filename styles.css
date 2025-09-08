@@ -133,39 +133,7 @@ h1, h2 {
     font-size: 0.5em;
 }
 
-/* Media query pour petits écrans */
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
 
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .timer {
-        font-size: 4vw;
-        gap: 3vw;
-    }
-
-    .timer div {
-        width: 20vw;
-        height: 20vw;
-        padding: 2vw;
-    }
-
-    h1, h2 {
-        font-size: 6vw; /* texte plus petit sur mobile */
-    }
-
-    button {
-        font-size: 3.5vw;
-        padding: 2vw 4vw;
-    }
-}
 
 
 button:hover {
