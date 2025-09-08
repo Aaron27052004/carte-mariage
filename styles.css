@@ -1,0 +1,151 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #00004d;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px; /* réduit l'épaisseur */
+  z-index: 1000;
+  height: 70px;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1em; /* un peu plus petit */
+  color: #444;
+}
+
+header .logo img {
+  height: 40px;      /* Taille réduite du logo */
+  width: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* resserré */
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95em; /* police plus fine */
+  color: #00004d; /* couleur fixe */
+}
+
+nav a:hover {
+  color: #c0392b; /* reste uniquement le hover */
+}
+
+nav a:visited,
+nav a:active {
+  color: #00004d; /* même couleur que par défaut */
+}
+
+nav a:hover {
+  color: #c0392b;
+}
+
+
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 100px 20px 50px; /* espace à cause du header */
+  text-align: center;
+}
+
+section:nth-child(even) {
+  background: #f8f8f8;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #c0392b;
+}
+
+/* Countdown */
+#countdown{
+    background: url('images/Photo_fiancaille.png') no-repeat center center;
+    background-size: cover;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.5em;
+  margin-top: 20px;
+
+}
+
+.timer div {
+    background: transparent;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: white;
+}
+
+.timer small {
+  display: block;
+  font-size: 0.6em;
+  color: white;
+    border: white 2px;
+
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  background: #c0392b;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #a93226;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}

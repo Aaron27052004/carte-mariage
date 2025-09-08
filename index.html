@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariage de Loane & Jérémy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- En-tête fixe -->
+<header>
+    <div class="logo">
+        <img src="images/logo_J&L.png" alt="Logo de Loane & Jérémy" >
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#mairie">Mairie</a></li>
+            <li><a href="#houppa">Houppa & Soirée</a></li>
+            <li><a href="#reponses">Réponses</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <!-- Section 1 : Compte à rebours -->
+  <section id="countdown">
+    <h1>Notre mariage approche !</h1>
+    <div class="timer">
+      <div><span id="days">--</span><small>jours</small></div>
+      <div><span id="hours">--</span><small>heures</small></div>
+      <div><span id="minutes">--</span><small>minutes</small></div>
+      <div><span id="seconds">--</span><small>secondes</small></div>
+    </div>
+  </section>
+
+  <!-- Section 2 : Mairie -->
+  <section id="mairie">
+    <h2>💍 La Mairie</h2>
+    <p>Nous vous donnons rendez-vous à la mairie de Paris, le <strong>14 juin 2026 à 14h00</strong>.</p>
+    <p>Adresse : Hôtel de Ville, 75004 Paris</p>
+  </section>
+
+  <!-- Section 3 : Houppa et soirée -->
+  <section id="houppa">
+    <h2>🌙 Houppa & Soirée</h2>
+    <p>La Houppa se tiendra à <strong>15h30</strong> au Domaine des Oliviers.</p>
+    <p>La soirée débutera à <strong>19h30</strong> avec dîner et danse jusqu’au bout de la nuit 🎶</p>
+  </section>
+
+  <!-- Section 4 : Vos réponses -->
+  <section id="reponses">
+    <h2>📩 Vos réponses</h2>
+    <p>Merci de nous indiquer votre présence :</p>
+    <div class="buttons">
+      <button>Je viens 💖</button>
+      <button>Je ne peux pas 😢</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>Avec amour — Loane & Jérémy</p>
+  </footer>
+
+  <!-- Script pour le compte à rebours -->
+  <script>
+    const targetDate = new Date("2026-06-14T14:00:00").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) return;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
