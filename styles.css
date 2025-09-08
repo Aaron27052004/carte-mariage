@@ -114,9 +114,9 @@ h1, h2 {
 }
 
 .timer div {
-    width: 60px;  /* réduit la largeur du cercle */
-    height: 60px; /* réduit la hauteur */
-    padding: 10px; /* moins de padding à l'intérieur */
+    width: 70px;  /* réduit la largeur du cercle */
+    height: 70px; /* réduit la hauteur */
+    padding: 15px; /* moins de padding à l'intérieur */
     border-radius: 50%;
     border: 2px solid white;
     color: white;
@@ -128,7 +128,7 @@ h1, h2 {
 }
 
 .timer small {
-  font-size: 0.5em; /* réduit le texte des labels */
+  font-size: 1em; /* réduit le texte des labels */
 }
 
 /* Buttons */
