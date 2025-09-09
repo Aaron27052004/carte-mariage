@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #00004d;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  z-index: 1000;
+  height: 70px;
+  font-family: 'Pinyon Script', cursive;
+}
+
+header .logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #00004d;
+}
+
+nav a:hover {
+  color: #00004d;
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 100px 5vw 50px;
+  text-align: center;
+  font-family: 'Pinyon Script', cursive;
+}
+
+/* Titre principal */
+h1 {
+  color: white;
+  font-size: clamp(2.5rem, 6vw, 4rem); /* s’adapte à l’écran */
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(20, 19, 19, 0.7);
+}
+
+/* Countdown */
+#countdown {
+  background: url('images/Photo_fiancaille.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+  font-size: clamp(0.9rem, 3vw, 1.3rem);
+  margin-top: 2vh;
+}
+
+.timer div {
+  width: clamp(60px, 15vw, 90px);
+  height: clamp(60px, 15vw, 90px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  border-bottom: 2px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+/* Section Mairie */
+#mairie {
+  background: url('images/fleurTaupe.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 40px 5vw;
+  color: #00004d;
+}
+
+#mairie div {
+  max-width: 700px;
+  margin: auto;
+  border: 3px solid white;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+}
+
+#mairie img {
+  max-width: 100px;
+  margin: 15px auto;
+  display: block;
+}
+
+#mairie h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
+}
+
+#mairie p {
+  font-size: clamp(1rem, 3.5vw, 1.6rem);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Houppa & soirée */
+#houppa, #reponses {
+  padding: 60px 5vw;
+}
+
+#houppa h2, #reponses h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 15px;
+}
+
+/* Boutons */
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  cursor: pointer;
+  background: #c0392b;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #a93226;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive : petits écrans */
+@media (max-width: 600px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 12px;
+  }
+
+  .timer {
+    gap: 5vw;
+  }
+
+  #mairie div {
+    padding: 20px;
+  }
+}

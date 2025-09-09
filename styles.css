@@ -61,7 +61,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #c0392b; /* reste uniquement le hover */
+  color: #00004d; /* reste uniquement le hover */
 }
 
 nav a:visited,
@@ -70,7 +70,7 @@ nav a:active {
 }
 
 nav a:hover {
-  color: #c0392b;
+  color: #00004d;
 }
 
 
@@ -168,6 +168,11 @@ min-height: 500px; /* ou selon ton besoin */
 
 #mairie h2{
     font-size: 70px;
+}
+
+#mairie p {
+  font-size: 30px;
+  line-height: 1.2;
 }
 
 
