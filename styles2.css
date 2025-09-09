@@ -75,9 +75,11 @@ h1 {
   background: url('images/Photo_fiancaille.png') no-repeat center center;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  min-height: 100vh; /* au lieu de height fixe */
+  padding: 0 5vw;
 }
 
 .timer {
@@ -100,7 +102,7 @@ h1 {
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
     border-right: 3px solid #ffffff;
 }
 
@@ -108,17 +110,18 @@ h1 {
 #mairie {
   background: url('images/fleurTaupe.jpg') no-repeat center center;
   background-size: cover;
-  padding: 40px 5vw;
+  background-position: center;
   color: #00004d;
+  padding: 20px;
+  min-height: 80vh; /* hauteur relative */
 }
 
 #mairie div {
-  max-width: 700px;
-  margin: auto;
   border: 3px solid white;
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
 }
 
 #mairie img {
@@ -182,22 +185,27 @@ footer {
 }
 
 /* Responsive : petits écrans */
-@media (max-width: 600px) {
-  nav ul {
-    gap: 10px;
+@media (max-width: 768px) {
+  #countdown {
+    min-height: 70vh; /* réduit sur mobile */
+    padding: 40px 10px;
   }
 
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 12px;
-  }
-
-  .timer {
-    gap: 5vw;
+  #mairie {
+    min-height: auto;
+    padding: 40px 15px;
   }
 
   #mairie div {
-    padding: 20px;
+    height: auto; /* plus de hauteur figée */
+  }
+
+  #mairie p {
+    font-size: 20px;
+  }
+
+  #mairie h2 {
+    font-size: 40px;
   }
 }
+
