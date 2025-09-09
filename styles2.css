@@ -112,7 +112,7 @@ h1 {
   background-size: cover;
   background-position: center;
   color: #00004d;
-  padding: 20px;
+  padding: 40px;
   min-height: 80vh; /* hauteur relative */
 }
 
@@ -120,8 +120,10 @@ h1 {
   border: 3px solid white;
   background: rgba(255, 255, 255, 0.6);
   padding: 20px;
-  max-width: 600px;
+  max-width: 600px; /*respecter*/
   margin: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
 }
 
 #mairie img {
@@ -142,31 +144,54 @@ h1 {
 }
 
 /* Houppa & soirée */
-#houppa div{
-  border: 3px solid white;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 20px;
-  max-width: 600px;
-  margin: auto;
+
+
+.kolSasson {
+  width: 80%x;       /* Réduction contrôlée */
+  max-width: 99%;     /* Responsive : ne dépasse pas le conteneur */
+  height: auto;       /* Conserve les proportions */
+  display: block;
+  margin: 20px auto;  /* Centrage et espacement */
 }
 
-
+.anneaux {
+  width: 80px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
 
 #houppa .invitation {
   background: rgba(255, 255, 255, 0.6); /* Fond blanc légèrement transparent */
-  padding: 40px 20px;
-  max-width: 800px;
+  padding:  20px;
+  max-width: 600px; /*respecter*/
   margin: auto;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border: 3px solid white;
+
 }
 
 
 
 #houppa .intro {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Sépare les blocs à droite et à gauche */
+    align-items: flex-start; /* Centre les blocs en hauteur */
+    font-size: 18px;
+    line-height: 1.6;
+
+    height: 100%; /* Assure que les blocs prennent toute la hauteur disponible */
 }
+
+.famille1{
+    text-align: left;
+}
+
+.famille2{
+    text-align:  right;
+}
+
 
 #houppa .text {
   font-size: 20px;
@@ -197,7 +222,7 @@ h1 {
 }
 
 #houppa, #reponses {
-  padding: 60px 5vw;
+  padding: 40px ;
 }
 
 #houppa h2, #reponses h2 {
@@ -247,7 +272,7 @@ footer {
 
   #mairie {
     min-height: auto;
-    padding: 40px 15px;
+    padding: 40px ;
   }
 
   #mairie div {
@@ -260,6 +285,18 @@ footer {
 
   #mairie h2 {
     font-size: 40px;
+  }
+
+  .kolSasson {
+    width: 99%;
+  }
+
+  #houppa{
+    padding: 40px;
+  }
+
+  #houppa .intro{
+    font-size: 13px;
   }
 }
 
