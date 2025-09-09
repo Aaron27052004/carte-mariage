@@ -90,8 +90,9 @@ section:nth-child(even) {
 h1{
   margin-bottom: 20px;
   color: white;
-   font-size: 2.5em; /* Augmente la taille de l'écriture */
-   margin-bottom: 10px;
+   font-size: 60px; /* Augmente la taille de l'écriture */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(20, 19, 19, 0.7);
 }
 
 /* Countdown */
@@ -116,22 +117,22 @@ h1{
 }
 
 .timer div {
-    width: 15vw; /* largeur relative */
-    height: 15vw; /* hauteur relative */
-    padding: 1vw;
-    border-radius: 50%;
-    border: 2px solid white;
-    color: white;
-    text-align: center;
-    display: flex;
+     width: 80px;
+    height: 80px;
+    display: flex
+;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 48%;
+    border-bottom: 1px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color :white;
 }
 
-.timer small {
-    font-size: 0.5em;
-}
+
 
 
 
@@ -141,16 +142,32 @@ button:hover {
 }
 
 /*Mairie*/
-#mairie{
-    background: url('images/Fond_carte.png') no-repeat center center;
-    color: #00004d; /* même couleur que par défaut */
+#mairie {
+  padding: 20px 20px; /* Ajuste selon le contenu textuel */
+  background: url('images/fleurTaupe.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  color: #00004d;
+  overflow: hidden;
+  /* Ne fixe pas une hauteur stricte */
+height: auto;
+min-height: 500px; /* ou selon ton besoin */
+}
 
+#mairie div {
+  border: 3px white solid;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.6); /* Ajoute un fond blanc légèrement opaque */
+}
 
-
+#mairie img {
+  max-width: 120px;
+  margin: 20px auto;
+  display: block;
 }
 
 #mairie h2{
-    font-size: 50px;
+    font-size: 70px;
 }
 
 
